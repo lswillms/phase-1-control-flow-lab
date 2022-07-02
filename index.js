@@ -1,11 +1,45 @@
-function scuberGreetingForFeet(){
-  // Write your code here!
+function scuberGreetingForFeet(distance){
+
+let rideFare
+  
+if (distance <= 400) {
+    rideFare = "This one is on me!"
+} else if (distance >=400 && distance <=2000) {
+     rideFare = "That will be twenty bucks."
+} else if (distance >=2000 && distance <=2500)  {
+    rideFare = "I will gladly take your thirty bucks."
+} else if (distance > 2500) {
+     rideFare = "No can do."
 }
 
-function ternaryCheckCity(){
-  // Write your code here!
+
+return rideFare
 }
 
-function switchOnCharmFromTip(){
-  // Write your code here!
+function ternaryCheckCity(city) {
+  return city === "NYC"? "Ok, sounds good." : "No go."
+}
+
+
+function switchOnCharmFromTip(amount){
+
+let tipGreeting
+
+switch(amount) {
+   case "generous":
+    tipGreeting = "Thank you so much."
+    break
+
+   case "not as generous":
+    tipGreeting =  "Thank you."
+   break
+
+  default:
+    tipGreeting =  "Bye."
+    break
+
+}
+
+return tipGreeting
+
 }
